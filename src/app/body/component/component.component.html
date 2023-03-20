@@ -1,0 +1,20 @@
+<div class="box">
+    <table>
+        <thead>
+            <tr>
+              <th>Bloem id</th>
+              <th>Bloem</th>
+              <th>Leverancier</th>
+              <th>Hoeveelheid</th>
+            </tr>
+            </thead>
+        <tbody>
+          <tr *ngFor="let bloemEl of bloemenlist">
+            <td>{{bloemEl.bloemId}}</td>
+            <td>{{bloemEl.bloem}}</td>
+            <td>{{bloemEl.leverancier}}</td>
+            <td>€ {{bloemEl.prijs}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
